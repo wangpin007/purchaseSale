@@ -1,0 +1,22 @@
+.setting-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-footer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.submit-button {
+  margin-right: 15px;
+}
+
+.tips {
+  color: red;
+  padding-bottom: 10px;
+}

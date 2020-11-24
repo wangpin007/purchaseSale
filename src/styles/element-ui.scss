@@ -1,0 +1,245 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+.el-input__inner {
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  height: 32px;
+  line-height: 32px;
+  min-height: 32px ;
+}
+
+.el-textarea__inner {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.el-button{
+  min-width: 80px;
+  border-radius: 2px;
+  padding: 9px 16px;
+}
+.el-form-item--small .el-form-item__error{
+  padding-top: 4px;
+}
+
+// table
+.el-table {
+  color: #3d3d3d;
+}
+.el-table th {
+  background-color: #88c1f4 !important;
+  color: #495060;
+  line-height: 16px !important;
+}
+.el-table--mini th,
+.el-table--mini td {
+  padding: 4px 0;
+}
+.el-table--small th, .el-table--small td {
+  padding: 4px 0;
+}
+.el-table .cell{
+  line-height: 22px;
+}
+.el-table td .cell button{
+  padding: 0 4px !important;
+}
+.el-table .cell .el-date-editor.el-input,
+.el-table .cell .el-date-editor.el-input__inner{
+  width: 100%;
+}
+.el-table .cell.el-tooltip{
+  padding: 0 6px;
+}
+.el-table .cell .el-button{
+  min-width: 30px;
+  padding: 0 !important;
+}
+
+// form
+.el-form--label-top .el-form-item__label{
+  padding-bottom: 0;
+  line-height: 22px;
+}
+// 步骤条 样式
+.el-step .is-success .el-step__icon {
+  background: #13ce66;
+  color: #fff;
+}
+
+.el-step .is-error .el-step__icon {
+  background: #ff4949;
+  color: #fff;
+}
+.el-step .is-wait .el-step__icon {
+  background: #c0c4cc;
+color: #fff;
+}
+
+.el-step__head.is-process {
+  color: #409eff;
+  border-color: #409eff;
+}
+.el-step .is-process .el-step__icon{
+  background: #409EFF;
+  color: #fff;
+}
+.el-step__title.is-process,
+.el-step__description.is-process{
+  color: #409eff;
+}
+
+
+// 弹框
+.el-dialog__body{
+  padding: 15px 20px !important;
+}
+
+.el-input.is-disabled .el-input__inner,
+.el-textarea.is-disabled .el-textarea__inner,
+.el-checkbox__input.is-disabled+span.el-checkbox__label{
+  color: #606266;
+}
+.el-input__suffix{
+  height: 30px;
+}
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+  background-color: #F2F6FC;
+  border-color: #bbbdbf;
+}
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after {
+  border-color: #bbbdbf;
+}
+.form-fill-style .el-form-item__label{
+  width: 100%;
+  text-align: left;
+  line-height: 24px;
+}
+.form-fill-style .el-form-item--small .el-form-item__content {
+  line-height: 27px;
+}
+.el-collapse-item__header{
+  background-color: #f4f5f7;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 5px;
+}
+.el-collapse-item__wrap{
+  padding: 10px;
+}
+.el-collapse-item__content{
+  padding-bottom: 0;
+}
+.common_dialog {
+  overflow: hidden;
+  .el-dialog {
+    max-height: 580px;
+    overflow: hidden;
+    overflow-y: auto;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    .el-dialog__body {
+      overflow: hidden;
+      overflow-y: auto;
+    }
+    .el-dialog__footer{
+      box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+    .el-dialog__header {
+      background: #F7F7F7;
+      -webkit-box-shadow: inset 0 -1px 0 0 #E8E8E8;
+      box-shadow: inset 0 -1px 0 0 #E8E8E8;
+      
+    }
+  }
+  &.preview_dialog{
+    .el-dialog{
+      max-height: 100%;
+    }
+    .el-dialog__body {
+      padding: 15px 40px !important;
+    }
+    .el-dialog__header {
+      padding: 15px;      
+    }
+  }
+}
